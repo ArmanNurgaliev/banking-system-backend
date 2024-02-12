@@ -1,0 +1,2 @@
+INSERT INTO person (id, email, password, first_name, last_name, dob, phone_number, role)
+VALUES (1, 'admin@mail.ru', '$2a$10$xdHXjz0TWJasDBN7lgy2POLhaPzLLUvTNSZD752idqZmBRWAYtxOK', 'admin', 'admin', '2000-01-01', '+79998887766', 'ADMIN');
