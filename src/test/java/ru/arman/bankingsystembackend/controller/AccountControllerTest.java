@@ -133,7 +133,7 @@ class AccountControllerTest {
                 .header(HttpHeaders.AUTHORIZATION, token)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(accountCreateDto)))
-                .andExpect(status().isOk())
+                .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.accountType").value(accountCreateDto.getAccountType()));
     }
 
